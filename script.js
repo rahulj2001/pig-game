@@ -50,7 +50,7 @@ function roll_handler() {
         } else {
             let new_score = Number(document.getElementById(`score--${curr_player}`).textContent) + num;
             document.getElementById(`score--${curr_player}`).textContent = new_score;
-            if (new_score >= 10) {
+            if (new_score >= 40) {
                 playing = false;
                 document.querySelector(`.player--${curr_player}`).classList.add('player--winner');
             }
